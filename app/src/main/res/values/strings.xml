@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CarteVisite</string>
+    <string name="phonenumber">+225 01 71 13 53 24</string>
+    <string name="email">yyd291205@gmail.com</string>
+    <string name="socialmedia">Instagram: yyd</string>
+    <string name="moi">Yeo Yassine</string>
+    <string name="fonction">Etudiant</string>
+    <string name="descriptel">numéro de telephone</string>
+    <string name="descripmail">email</string>
+    <string name="descripreseausocial">reseau social</string>
+    <string name="descriplogo">Logo Android</string>
+</resources>
