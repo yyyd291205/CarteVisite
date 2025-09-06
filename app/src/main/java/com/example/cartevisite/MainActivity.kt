@@ -29,18 +29,16 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             CarteVisiteTheme {
-                Scaffold(
-                    modifier = Modifier.fillMaxSize()
-                ) { innerPadding ->
-                    CarteVisite(modifier = Modifier.padding(innerPadding))
-                }
+
+                    CarteVisite()
+
             }
         }
     }
 }
 
 @Composable
-fun CarteVisite(modifier: Modifier = Modifier) {
+fun CarteVisite() {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -68,7 +66,7 @@ fun CarteVisite(modifier: Modifier = Modifier) {
             Text(
                 text = stringResource(R.string.moi),
                 fontSize = 32.sp,
-                color=Color(0xFFF2F2F2),
+                color=Color(0xFF3ddc84),
                 fontWeight = FontWeight.Bold
             )
             Text(
@@ -76,7 +74,7 @@ fun CarteVisite(modifier: Modifier = Modifier) {
                 fontSize = 20.sp,
                 color=Color(0xFFF2F2F2),
             )
-            Spacer(modifier = Modifier.height(32.dp))
+            Spacer(modifier = Modifier.height(50.dp))
 
 
             Row(
@@ -92,17 +90,17 @@ fun CarteVisite(modifier: Modifier = Modifier) {
                     Icon(
                         Icons.Default.Phone,
                         contentDescription = stringResource(R.string.descriptel),
-                        tint = Color(0xFFF2F2F2)
+                        tint = Color(0xFF3ddc84)
                     )
                     Icon(
                         Icons.Default.Email,
                         contentDescription = stringResource(R.string.descripmail),
-                        tint = Color(0xFFF2F2F2)
+                        tint = Color(0xFF3ddc84)
                     )
                     Icon(
                         Icons.Default.Share,
                         contentDescription = stringResource(R.string.descripreseausocial),
-                        tint = Color(0xFFF2F2F2)
+                        tint = Color(0xFF3ddc84)
                     )
                 }
 
@@ -116,19 +114,19 @@ fun CarteVisite(modifier: Modifier = Modifier) {
                     Text(
                         stringResource(R.string.phonenumber),
                         fontSize = 18.sp,
-                        color = Color(0xFF3ddc84),
+                        color = Color(0xFFF2F2F2),
                         fontWeight = FontWeight.SemiBold
                     )
                     Text(
                         stringResource(R.string.email),
                         fontSize = 18.sp,
-                        color = Color(0xFF3ddc84),
+                        color = Color(0xFFF2F2F2),
                         fontWeight = FontWeight.SemiBold
                     )
                     Text(
                         stringResource(R.string.socialmedia),
                         fontSize = 18.sp,
-                        color = Color(0xFF3ddc84),
+                        color = Color(0xFFF2F2F2),
                         fontWeight = FontWeight.SemiBold
                     )
                 }
